@@ -203,7 +203,24 @@ main{
     justify-content: space-around;
 }
 
+/* Sponsor Section ------------------------------------------*/
 
+.sponsor-header{
+    text-align: center;
+}
+
+.sponsor-title{
+    color: var(--Dark-01, #131313);
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.sponsor-img-container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
 
 /* responsive media queries ---------------------------------*/
 
@@ -242,6 +259,42 @@ main{
     .feature-content{
         padding: 50px;
         text-align: justify;
+    }
+
+    .facts-section{
+        margin-top: -160px;
+    }
+
+    .credential-cards{
+        flex-direction: column;
+        align-items: center;
+        margin-top: -70px;
+    }
+
+    .facts-header{
+        padding: 70px;
+        text-align: justify;
+    }
+
+    .credential-cards .cards{
+        margin-bottom: 40px;
+    }
+
+    .sponsor-section {
+        margin-top: -150px;
+    }
+
+    .sponsor-img-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sponsor-img-container .sponsor-img{
+        margin-bottom: 30px;
+    }
+
+    .sponsor-img img{
+        width: 120px;
     }
 }
 
@@ -285,9 +338,45 @@ main{
         padding: 75px;
         text-align: justify;
     }
+
+    .facts-section{
+        margin-top: -170px;
+    }
+
+    .credential-cards{
+        flex-direction: column;
+        align-items: center;
+        margin-top: -70px;
+    }
+
+    .facts-header{
+        padding: 80px;
+        text-align: justify;
+    }
+
+    .credential-cards .cards{
+        margin-bottom: 40px;
+    }
+
+    .sponsor-section {
+        margin-top: -100px;
+    }
+
+    .sponsor-img-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sponsor-img-container .sponsor-img{
+        margin-bottom: 30px;
+    }
+
+    .sponsor-img img{
+        width: 120px;
+    }
 }
 
-/* other (laptop) */
+/* laptop*/
 
 @media screen and (min-width:992px) and (max-width:1455px){
 
@@ -327,5 +416,52 @@ main{
         text-align: justify;
     }
 
+    .facts-section{
+        margin-top: -200px;
+    }
 
+    .facts-header{
+        padding: 130px;
+        text-align: justify;
+    }
+
+    .credential-cards .cards{
+        margin-bottom: 80px;
+    }
+
+    .credential-cards{
+        /* border: 2px solid fuchsia; */
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+        justify-content: space-evenly;
+        margin-top: -80px;
+        padding: 0 100px;
+    }
+
+    .sponsor-section {
+        padding-left: 50px;
+        margin-top: -80px;
+    }
+
+    .sponsor-img-container .sponsor-img{
+        margin-bottom: 30px;
+    }
+
+    .sponsor-img img{
+        width: 120px;
+    }
+}
+
+/* Other customs */
+
+@media screen and (min-width: 780px) and (max-width: 992px) {
+    .credential-cards{
+        /* border: 2px solid fuchsia; */
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+        justify-content: space-evenly;
+        margin-top: -30px;
+        padding: 0 80px;
+        gap: 20px;
+    }
 }
