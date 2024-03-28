@@ -98,7 +98,7 @@ nav ul li a{
 
 /* Main Section -------------------------------------------- */
 
-main{
+main .feature-section, .facts-section, .sponsor-section{
     max-width: 1480px;
     margin: 0 auto;
 }
@@ -153,12 +153,99 @@ main{
     font-weight: 400;
     line-height: 26px;
     margin-top: -14px;
-    margin-bottom: 40px;
+    margin-bottom: 45px;
+}
+
+/* Enjoyable Feature Section ------------------------------- */
+
+.enjoyable-feat-section{
+    display: flex;
+    margin-top: 130px;
+    gap: 140px;
+    justify-content: center;
+    border: 2px solid crimson;
+    margin-left: 340px;
+    margin-right: 340px;
+}
+
+.enjoyable-feat-section .feature-content{
+    padding-left: 0;
+}
+
+.feature-content .feature-title{
+    color: var(--Dark-01, #131313);
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    border-left: 7px solid #FF900E;
+    padding-left: 21px;
+}
+
+.feature-content .header-text{
+    color: var(--Dark-03, #727272);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 30px;
+    /* width: 586px; */
+}
+
+.feature-content .box{
+    /* border: 2px solid blueviolet; */
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 10px 42px 30px 32px;
+    margin-bottom: 20px;
+    /* width: 586px; */
+}
+
+.feature-content .box .title{
+    color: var(--Dark-01, #131313);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.feature-content .box .details{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: -23px;
+}
+
+.exp-card{
+    border-radius: 8px;
+    background: #FF900E;
+    text-align: center;
+    color: #FFF;
+    width: 342px;
+    padding: 45px 5px;
+    position: relative;
+    bottom: 90px;
+    right: 110px;
+}
+
+.exp-card h2{
+    margin: 0;
+    font-size: 65px;
+    font-weight: 700;
+}
+
+.exp-card p{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+.enjoyable-feat-section .feature-image img{
+    height: 90%;
 }
 
 /* Some Facts Section ---------------------------------------*/
 
 .facts-section{
+    margin-top: 130px;
     margin-bottom: 180px;
 }
 
@@ -278,6 +365,20 @@ main{
 
     .credential-cards .cards{
         margin-bottom: 40px;
+    }
+
+    .enjoyable-feat-section{
+        flex-direction: column;
+        margin: 150px 110px;
+    }
+
+    .enjoyable-feat-section .feature-title, .feature-text{
+        width: 100%;
+    }
+
+    .enjoyable-feat-section .feature-image{
+        width: 400px;
+        height: 400px;
     }
 
     .sponsor-section {
